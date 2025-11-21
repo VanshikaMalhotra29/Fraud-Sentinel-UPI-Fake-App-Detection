@@ -1,0 +1,76 @@
+/* Custom CSS to enhance Tailwind classes and look trustworthy */
+body {
+    /* Use Inter, but ensure fallback */
+    font-family: 'Inter', sans-serif;
+    /* Clean, light canvas color */
+    background-color: #F8FAFC; /* Lighter background for better contrast */
+    padding: 2.5rem; /* Increase base padding for more breathing room */
+}
+
+/* Base Card Styling */
+.card {
+    background-color: white;
+    /* Slightly smaller border-radius for a sharper look */
+    border-radius: 0.5rem;
+    /* More pronounced shadow for depth */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E2E8F0; /* Subtle light border */
+    transition: all 0.2s ease-in-out; /* Smooth hover effects */
+}
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar for tables (enhanced colors) */
+.scroll-x::-webkit-scrollbar { height: 8px; }
+.scroll-x::-webkit-scrollbar-thumb {
+    background: #6366F1; /* Indigo color for the scroll thumb */
+    border-radius: 4px;
+}
+.scroll-x::-webkit-scrollbar-track {
+    background: #E0E7FF; /* Light indigo track */
+}
+
+/* Enhance the main header */
+header h1 {
+    letter-spacing: -0.05em; /* Tighter spacing for a bold title */
+}
+
+/* Dynamic Risk Threshold Control Styling */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Slightly larger thumb */
+    height: 20px;
+    background: #4F46E5; /* Deep Indigo accent color */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #E0E7FF; /* Light border around thumb for visual pop */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    transition: background 0.15s ease-in-out;
+}
+input[type=range]:focus { outline: none; }
+input[type=range]:active::-webkit-slider-thumb {
+    background: #6366F1; /* Lighter on click */
+}
+
+/* Table Enhancements for Readability */
+#detection-table thead th {
+    /* Slightly darker header background for contrast */
+    background-color: #EBF4FF;
+    border-bottom: 2px solid #BFDBFE;
+}
+#detection-table tbody tr:nth-child(even) {
+    /* Subtle zebra striping for better row distinction */
+    background-color: #F9FAFB;
+}
+
+/* Takedown Kit Styling */
+#takedown-kit h3 {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    color: #B91C1C; /* Stronger red for focus */
+}
+#takedown-kit p {
+    line-height: 1.4; /* Better readability for text blocks */
+}

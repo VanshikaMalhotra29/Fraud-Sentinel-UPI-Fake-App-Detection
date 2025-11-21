@@ -1,0 +1,4 @@
+App Name,Package ID,Publisher,Icon Hash (Mock),Impersonating_Target,Ground Truth
+PayTM - Official,com.paytm.app,One97 Comms,p123q456r789s01t,PayTM,Genuine
+Phonpe Wallet,com.phonpe.wallet.free,XYZ Devs,a345b567c890d12e,PhonePe,Fake
+PaytM Update,com.paytm.update,Updates Inc,p123q456r789s01t,PayTM,Fake
